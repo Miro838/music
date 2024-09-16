@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="player">
+        <div class="album-art">
+            <img id="album-art" src="default-album-art.jpg" alt="Album Art">
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="prev"><span>❮</span></button>
+            <button class="control-btn" id="play"><span>▶</span></button>
+            <button class="control-btn" id="next"><span>❯</span></button>
+        </div>
+        <div class="info">
+            <span id="song-title">Song Title</span>
+            <span id="artist-name">Artist Name</span>
+        </div>
+        <input type="range" id="progress-bar" min="0" max="100" value="0">
+    </div>
+    <audio id="audio" src=""></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
